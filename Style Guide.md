@@ -16,12 +16,9 @@ The way we to create a Headers in Markdown is using the **``"#"``** symbol. For 
 ## Our Code Block Style:
 In Markdown there are two ways to format code blocks. The two ways would be indenting the entirety of the code by four spaces or using three backticks before and after the code block. For our documentation for all code blocks we will be using the three \``` before and after the code.
 
-
-	1. With sub bullets also being numbers
-
-
-
 images, margins, voice and style, formal
+
+## Our Images, Margins, Voices Style:
 
 Images in our style guide will include alterante text for screen readers and other accsesibility features. Images will include a 10 dp padding margin to offset any elements that surround our image. Images will also be formatted to stlye around text and not be large enough to override page dimensions like height and width. 
 
