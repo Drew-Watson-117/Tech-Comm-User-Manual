@@ -16,16 +16,10 @@ The way we to create a Headers in Markdown is using the **``"#"``** symbol. For 
 	- With sub bullets being tabbed over
 
 1. Ordered list will be numbers
-<<<<<<< HEAD
-	1. With sub bullets also being numbers
-
-=======
 	1. With sub bullets also being numbers and tabbed over
 
 ## Our Code Block Style:
 In Markdown there are two ways to format code blocks. The two ways would be indenting the entirety of the code by four spaces or using three backticks before and after the code block. For our documentation for all code blocks we will be using the three \``` before and after the code.
-
-images, margins, voice and style, formal
 
 ## Our Images, Margins, Voices Style:
 
@@ -38,4 +32,3 @@ Emails will also follow the same format as links but when clicked upon, prompt t
 For any long quote passages potentially referencing academic sources, our style guide will use blockquotes. Blockquotes will offset text to indicate a quote and distinuish the text from the rest of the document. Example -> Dorothy followed her through many of the beautiful rooms in her castle.
 
 To indicate any mathematical symbols the style guide will use the code formatting from markdown and use the built in math notatation for mathematical operations. 
->>>>>>> 641a96f76ebe9576f019390c54ec134c8e7f2856
