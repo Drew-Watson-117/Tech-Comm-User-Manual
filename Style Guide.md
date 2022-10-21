@@ -19,14 +19,19 @@ The way we to create a Headers in Markdown is using the **``#``** symbol. For He
 	1. With sub bullets also being numbers and tabbed over
 
 ## Our Code Block Style:
-In Markdown there are two ways to format code blocks. The two ways would be indenting the entirety of the code by four spaces or using three backticks before and after the code block. For our documentation for all code blocks we will be using the three \``` before and after the code.
+In Markdown there are several ways to format code blocks. The two ways would be indenting the entirety of the code by four spaces or using backticks before and after the code block; one backtick for a single line code block, and three backticks for a multi-line code block. For our documentation for all code blocks we will be using the backticks before and after a code block. One backtick will be used for single line code blocks, and three backticks will be used for a multi-line comment. A line of white space will be put before and after each code block. When code blocks are used in an in-line fashion, single backticks will be used. An example of the formatting for code blocks is given below:
+
+`Single line code block goes here`
+
+ ```
+ Multi-line code block goes here
+```
 
 ## Our Images Style:
 
 Images in our style guide will include alterante text for screen readers and other accsesibility features. Images will include a 10 dp padding margin to offset any elements that surround our image. Images will also be formatted to stlye around text and not be large enough to override page dimensions like height and width. 
 
-## Our Hyperlink Style:
-For any document links, the style guide specifies they must be imbedded into text that most cosley corresponds with information about the link. (Example - "There is more info *[here](https://github.com/Drew-Watson-117/Tech-Comm-User-Manual/blob/master/Style%20Guide.md)*)" 
+For any document links, the style guide specifies they must be imbedded into text that most closely corresponds with information about the link. (Example - "There is more info *[here](https://github.com/Drew-Watson-117/Tech-Comm-User-Manual/blob/master/Style%20Guide.md)*)" 
 
 Emails will also follow the same format as links but when clicked upon, prompt the user to send an email to the selected email. (Example - "This is my *[email](mailto:dummyemail@email.com)*.")
 
