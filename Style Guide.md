@@ -1,4 +1,3 @@
-
 # Markdown
 Markdown is a light markup language. It enables easy and quick formatting of headers, lists, and text formatting. It is an alternative to systems such as Word and Latex. In Markdown we use symbles around text to denote heades, bolding, or lists. This creates a system that is faster to create and edit than Word and less complex than Latex. It is also able to be converted into HTML and PDF's with ease. Because of these reasons it will be used as the editor for the manual. This also provides us with our baseline styling.
 
@@ -45,4 +44,3 @@ To indicate any mathematical symbols the style guide will use the code formattin
 The symbol for math would be the same as MatLab and would be ```$``` before and after the code.  
 Example - 
 $E=mc^2$
-
