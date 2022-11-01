@@ -196,14 +196,36 @@ If not, you can click on the "Commits" button (highlighted in red above). This w
 
 The bolded text on the commit should match the commit message you inputed in Step 5. Congratulations! You've successfully pushed changes you made on your local machine to your remote GitLab repository.
 
-
 ## Collaboration
-
-
 
 ## Milestones
 
 ## Snippets
+
+The snippets tab is a place to store your code snippets. Small pieces of code that have it's independent functionality that you can share with the rest of your team. 
+
+![[Pasted image 20221101114526.png]]
+
+There are two tabs here, one for your current snippets and the other is for Exploring other snippets. 
+On the Explore snippets you can see the most recently created public snippets.
+
+![[Pasted image 20221101114755.png]]
+
+To create a snippet all you have to do is hit `New snippet` on the "Your snippets" tab, there is also a button that links to the documentation behind how code snippets work if that is what you are looking for.
+
+![[Pasted image 20221101114846.png]]
+
+When you press `New snippet` you it allows for you to enter a Title, Description, File Name, the code you want in that snippet, optional more files, and whether the code snippet is private or public. 
+
+![[Pasted image 20221101115213.png]]
+
+The following is what it looks like after you have created a code snippet and the options it gives you to fiddle with it.
+
+![[Pasted image 20221101115429.png]]
+
+The Snippets page will have also added that as well and increase tabs for Private, Internal, Public, and All of you code snippets. 
+
+![[Pasted image 20221101115534.png]]
 
 ## Activity
 
