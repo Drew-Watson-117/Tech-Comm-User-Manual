@@ -45,7 +45,7 @@ There are four options on this dropdown: `Set status`, `Edit profile`, `Preferen
 
 The last two drop down options both take you to the User Settings in different tabs, with `Edit profile` going to the profile tab of User Settings. This page is where you can change your main profile settings like TimeZone, Avatar, and little about yourself in the User Information. 
 
-![[Pasted image 20221027130834.png]]
+![[user-profile.png]]
 
 As expected the `Preferences` button takes you to the Preferences tab of the User Settings and the following is what you can do in each tab:
 - Profile: Houses your main profile settings
@@ -65,6 +65,8 @@ As expected the `Preferences` button takes you to the Preferences tab of the Use
 - Usage Quotas: GitLab usage charts 
 
 ### SSH Keys
+
+
 
 ## Repositories 
 
@@ -196,6 +198,8 @@ The bolded text on the commit should match the commit message you inputed in Ste
 
 
 ## Collaboration
+
+
 
 ## Milestones
 
