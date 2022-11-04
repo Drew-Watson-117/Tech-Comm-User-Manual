@@ -68,9 +68,9 @@ As expected the `Preferences` button takes you to the Preferences tab of the Use
 - Authentication Log: Security log of authentication events
 - Usage Quotas: GitLab usage charts 
 
-
 -------------------------------------------------------------------------------
-
+\
+	
 ## Repositories 
 
 A **repository** is a directory or folder that is stored in your GitLab account. GitLab acts as a version control system for your repository, which means that GitLab allows changes to your repository to be easily moderated. In this **repository** section of the manual, you will learn how to create a remote repository in GitLab, clone that repository to your local machine, and push changes from your local repository to your remote GitLab repository.
@@ -204,7 +204,11 @@ If not, you can click on the "Commits" button (highlighted in red above). This w
 The bolded text on the commit should match the commit message you inputed in Step 5. Congratulations! You've successfully pushed changes you made on your local machine to your remote GitLab repository.
 
 -------------------------------------------------------------------------------
-
+\
+\
+\
+\
+	
 ## Collaboration
 
 ## Issues
