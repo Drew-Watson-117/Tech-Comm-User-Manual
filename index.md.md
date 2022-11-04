@@ -4,11 +4,15 @@
 
 *The following document is a manual which aims to be a guide for agile work space GitLab*
 
+-------------------------------------------------------------------------------
+
 ## Introduction to GitLab
 
 GitLab aims to bring teams together and tackle all aspects of the agile development in one free Development Operations Platform.   
 
 As the name entails the main software that GitLab runs off of would be Git, aka the Global Information Transformation. Git is a open source software that tracks file changes and branching to allow for programmers to collaborate with eachother while developing source code. 
+
+-------------------------------------------------------------------------------
 
 ## Accounts
 
@@ -64,9 +68,8 @@ As expected the `Preferences` button takes you to the Preferences tab of the Use
 - Authentication Log: Security log of authentication events
 - Usage Quotas: GitLab usage charts 
 
-### SSH Keys
 
-
+-------------------------------------------------------------------------------
 
 ## Repositories 
 
@@ -112,8 +115,11 @@ There are two primary methods of cloning a repository: Using HTTPS, and using SS
 #### Cloning with HTTPS
 
 1. On GitLab, navigate to your desired repository. Navigating to an existing repository in GitLab is outlined in Step 10 of the "Creating a Repository in Gitlab" section above, or by typing a link of the form https://gitlab.com/{YOUR_USERNAME_HERE}/{YOUR_PROJECT_SLUG_HERE}
-2. Click on the button that says "Clone"
-3. Click the clipboard icon next to the text box labeled "Clone with HTTPS":
+2. Click on the button that says "Clone":
+
+![[Pasted image 20221104111859.png]]
+
+4. Click the clipboard icon next to the text box labeled "Clone with HTTPS":
 
 ![[Pasted image 20221027154233.png]]
 
@@ -125,11 +131,11 @@ This will copy the HTTPS address of the repository to your clipboard.
 
 5. Input the following command:
 	`$ git clone {Paste URL you copied in Step 3}`
-	Note that in Git Bash you can paste text by pressing `Shift + Insert` (don't type the plus sign, just hold shift and then press insert). Press enter to execute the command. The output should look something like this:
+	Note that in Git Bash you can paste text by right clicking with the mouse and then selecting "Paste". Press enter to execute the command. If prompted, enter your Gitlab username and password. If you were prompted for your username and password, the output should look like this:
 
 ![[Pasted image 20221027155627.png]]
 
-If prompted, enter your Gitlab User name and Password. After entering your credentials, the output should look like this:
+Otherwise, the output should look something like this:
 
 ![[Pasted image 20221027160803.png]]
 
@@ -138,6 +144,7 @@ If prompted, enter your Gitlab User name and Password. After entering your crede
 ![[Pasted image 20221027161322.png]]
 
 7. The directory which as the same name as your **project slug** is the cloned repository. In Git Bash, there will be a word in parenthesis (probably "main"), which indicates that you are inside your repository!
+8. Congratulations! You have successfully cloned your remote Gitlab repository using HTTPS!
 
 #### Cloning with SSH
 
@@ -161,7 +168,7 @@ To **push** to a repository means to take changes you've made to your local repo
     
 ![[Pasted image 20221031101935.png]]
 
-![[Pasted image 20221031101857.png]]
+![[Pasted image 20221031101857 1.png]]
 
 2. Make a change to the file and save it. You can now exit your text editor.
 
@@ -195,6 +202,8 @@ If not, you can click on the "Commits" button (highlighted in red above). This w
 ![[Pasted image 20221031120150.png]]
 
 The bolded text on the commit should match the commit message you inputed in Step 5. Congratulations! You've successfully pushed changes you made on your local machine to your remote GitLab repository.
+
+-------------------------------------------------------------------------------
 
 ## Collaboration
 
@@ -271,9 +280,3 @@ The Snippets page will have also added that as well and increase tabs for Privat
 
 ![[Pasted image 20221101115534.png]]
 
-## Activity
-
-## Dashboards 
-### Environments Dashboard
-### Operations Dashboard
-### Security Dashboard 
