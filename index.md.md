@@ -1,10 +1,37 @@
-![[Pictures/gitlab-logo-100.png | 250]]
+![[Pictures/gitlab-logo-100.png | 500]]
 
-# Gitlab User Manual
+# User Manual
 
 *The following document is a manual which aims to be a guide for agile work space GitLab*
 
 -------------------------------------------------------------------------------
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+	
+
+
 
 ## Introduction to GitLab
 
@@ -22,34 +49,48 @@ A gitlab account is needed to access all the features of the agile development p
 
 The home page for https://gitlab.com is just information about what the platform is capable of and features that you would recieve when you sign up. The portal to loging in and account creation is on the top right of the homepage with the button being `Login`.
 
+
 ![[home-page.png | 700]] 
+
 
 After hitting the `Login` button it will take you to the following screen where you can login if you already have an account, register for a dedicated gitlab account, or sign in using a third party account like google. 
 
-![[login-page.png | 400]]
+
+![[login-page.png ]]
+
 
 To create an account the navigation you would go would either be the [[https://gitlab.com/users/sign_up |Register now]] hyperlink or signing in with the third party. After hitting the [[https://gitlab.com/users/sign_up |Register now]] hyperlink the following screen prompts to create an account as well as gives you another chance to sign in with a third party account. 
 
 
-![[register-page.png | 400]]
+![[register-page.png ]]
+
 
 There will be a verification for your account but once that is done you are logged in your homepage for [[https://gitlab.com |GitLab]] should change to a completely different page where you have access to all of GitLab's functionality. 
 
+
 ![[logged-in-homepage.png | 700]]
+
 
 ### Basic Settings and Preferences
 
+
 Just like any good collaboration space for developers, GitLab allows for you to change account information as well as preferences to add a little bit of uniqueness to your GitLab experience. The way to access this is from your homepage and hit the profile drop down on the top right. 
 
-![[profile-dropdown.png | 400]]
+
+![[profile-dropdown.png]]
+
 
 There are four options on this dropdown: `Set status`, `Edit profile`, `Preferences`, and `Sign out`. The most obvious one would be `Sign out` where it would take you back to the original GitLab page prior to being signed in to your account. You can also set your status with the `Set status` button which allows for you to broadcast to your fellow collaborators how you are currently feeling and if you are currently busy.
 
+
 ![[set-status.png]]
+
 
 The last two drop down options both take you to the User Settings in different tabs, with `Edit profile` going to the profile tab of User Settings. This page is where you can change your main profile settings like TimeZone, Avatar, and little about yourself in the User Information. 
 
+
 ![[user-profile.png]]
+
 
 As expected the `Preferences` button takes you to the Preferences tab of the User Settings and the following is what you can do in each tab:
 - Profile: Houses your main profile settings
