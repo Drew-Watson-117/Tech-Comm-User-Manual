@@ -59,12 +59,28 @@ After hitting the `Login` button it will take you to the following screen where 
 ![[login-page.png ]]
 
 
+\
+\
+\
+\
 To create an account the navigation you would go would either be the [[https://gitlab.com/users/sign_up |Register now]] hyperlink or signing in with the third party. After hitting the [[https://gitlab.com/users/sign_up |Register now]] hyperlink the following screen prompts to create an account as well as gives you another chance to sign in with a third party account. 
 
 
 ![[register-page.png ]]
 
 
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 There will be a verification for your account but once that is done you are logged in your homepage for [[https://gitlab.com |GitLab]] should change to a completely different page where you have access to all of GitLab's functionality. 
 
 
@@ -80,6 +96,8 @@ Just like any good collaboration space for developers, GitLab allows for you to 
 ![[profile-dropdown.png]]
 
 
+\
+\
 There are four options on this dropdown: `Set status`, `Edit profile`, `Preferences`, and `Sign out`. The most obvious one would be `Sign out` where it would take you back to the original GitLab page prior to being signed in to your account. You can also set your status with the `Set status` button which allows for you to broadcast to your fellow collaborators how you are currently feeling and if you are currently busy.
 
 
@@ -92,6 +110,12 @@ The last two drop down options both take you to the User Settings in different t
 ![[user-profile.png]]
 
 
+\
+\
+\
+\
+\
+	
 As expected the `Preferences` button takes you to the Preferences tab of the User Settings and the following is what you can do in each tab:
 - Profile: Houses your main profile settings
 - Account: Allows for you to change your username and manage other acconts with 2FA (Two-Factor-Authentication)
@@ -109,9 +133,167 @@ As expected the `Preferences` button takes you to the Preferences tab of the Use
 - Authentication Log: Security log of authentication events
 - Usage Quotas: GitLab usage charts 
 
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+### SSH Keys
+All SSH Documentation comes directly from [here](https://docs.gitlab.com/ee/user/ssh.html#prerequisites)
+
+#### Prerequisites
+
+To use SSH to communicate with GitLab, you need:
+
+-   The OpenSSH client, which comes pre-installed on GNU/Linux, macOS, and Windows 10.
+-   SSH version 6.5 or later. Earlier versions used an MD5 signature, which is not secure.
+
+To view the version of SSH installed on your system, run `ssh -V`.
+
+#### Generate an SSH key pair
+
+If you do not have an existing SSH key pair, generate a new one:
+
+1.  Open a terminal.
+2.  Run `ssh-keygen -t` followed by the key type and an optional comment. This comment is included in the `.pub` file that’s created. You may want to use an email address for the comment.
+    
+    For example, for ED25519:
+    
+    ```
+    ssh-keygen -t ed25519 -C "<comment>"
+    ```
+    
+    For 2048-bit RSA:
+    
+    ```
+    ssh-keygen -t rsa -b 2048 -C "<comment>"
+    ```
+    
+3.  Press Enter. Output similar to the following is displayed:
+    
+    ```
+    Generating public/private ed25519 key pair.
+    Enter file in which to save the key (/home/user/.ssh/id_ed25519):
+    ```
+    
+4.  Accept the suggested filename and directory, unless you are generating a deploy key or want to save in a specific directory where you store other keys.
+    
+    You can also dedicate the SSH key pair to a specific host.
+    
+5.  Specify a passphrase
+    
+    ```
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    ```
+    
+    A confirmation is displayed, including information about where your files are stored.
+    
+
+A public and private key are generated. Add the public SSH key to your GitLab account and keep the private key secure.
+
+
+
+### GPG
+All GPG documention comes directly from [here](https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/)
+
+#### Create a GPG key
+
+If you don’t already have a GPG key, create one:
+
+1.  [Install GPG](https://www.gnupg.org/download/) for your operating system. If your operating system has `gpg2` installed, replace `gpg` with `gpg2` in the commands on this page.
+2.  To generate your key pair, run the command appropriate for your version of `gpg`:
+
+    ```
+    # Use this command for the default version of GPG, including
+    # Gpg4win on Windows, and most macOS versions:
+    gpg --gen-key
+    
+    # Use this command for versions of GPG later than 2.1.17:
+    gpg --full-gen-key
+    ```
+
+3.  Select the algorithm your key should use, or press Enter to select the default option, `RSA and RSA`.
+4.  Select the key length, in bits. GitLab recommends 4096-bit keys.
+5.  Specify the validity period of your key. This value is subjective, and the default value is no expiration.
+6.  To confirm your answers, enter `y`.
+7.  Enter your name.
+8.  Enter your email address. It must match a verified email address in your GitLab account.
+9.  Optional. Enter a comment to display in parentheses after your name.
+10.  GPG displays the information you’ve entered so far. Edit the information or press O (for `Okay`) to continue.
+11.  Enter a strong password, then enter it again to confirm it.
+12.  To list your private GPG key, run this command, replacing `<EMAIL>` with the email address you used when you generated the key:
+    
+    ```
+    gpg --list-secret-keys --keyid-format LONG <EMAIL>
+    ```
+    
+13.  In the output, identify the `sec` line, and copy the GPG key ID. It begins after the `/` character. In this example, the key ID is `30F2B65B9246B6CA`:
+    
+    ```
+    sec   rsa4096/30F2B65B9246B6CA 2017-08-18 [SC]
+          D5E4F29F3275DC0CDA8FFC8730F2B65B9246B6CA
+    uid                   [ultimate] Mr. Robot <your_email>
+    ssb   rsa4096/B7ABC0813E4028C0 2017-08-18 [E]
+    ```
+    
+14.  To show the associated public key, run this command, replacing `<ID>` with the GPG key ID from the previous step:
+    
+    ```
+    gpg --armor --export <ID>
+    ```
+    
+15.  Copy the public key, including the `BEGIN PGP PUBLIC KEY BLOCK` and `END PGP PUBLIC KEY BLOCK` lines. You need this key in the next step.
+
+#### Add a GPG key to your account
+
+To add a GPG key to your user settings:
+
+1.  Sign in to GitLab.
+2.  In the top-right corner, select your avatar.
+3.  Select **Edit profile**.
+4.  On the left sidebar, select **GPG Keys** ().
+5.  In **Key**, paste your _public_ key.
+6.  To add the key to your account, select **Add key**. GitLab shows the key’s fingerprint, email address, and creation date:
+
 -------------------------------------------------------------------------------
 \
-	
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 ## Repositories 
 
 A **repository** is a directory or folder that is stored in your GitLab account. GitLab acts as a version control system for your repository, which means that GitLab allows changes to your repository to be easily moderated. In this **repository** section of the manual, you will learn how to create a remote repository in GitLab, clone that repository to your local machine, and push changes from your local repository to your remote GitLab repository.
@@ -124,6 +306,14 @@ GitLab provides a way to very easily create a repository on your account. To cre
 
 ![[Pasted image 20221027124044.png]]
 
+\
+\
+\
+\
+\
+\
+\
+	
 If you do have projects, the dashboard looks like this:
 
 ![[Pasted image 20221027130632.png]]
@@ -143,10 +333,17 @@ If you do have projects, the dashboard looks like this:
 8. Click the button that says "Create project".
 9. This will create the repository, and navigate you to the webpage for your new repository.
 10. To find your repository from any point on the GitLab website, just click on the fox icon in the top left, look for your repository in the list, and click on it:
+	
 ![[Pasted image 20221027131102.png]]
 
 ![[Pasted image 20221027131234.png]]
-
+\
+\
+\
+\
+\
+\
+	
 ### Cloning a Repository
 
 To be able to make edits to the code in your repository, you have to be able to **clone** your remote GitLab repository onto your local machine. Cloning a repository will allow you to have access to the code in your remote repository on your local machine. To clone a repository, you will need to have access to a terminal on your computer. For this demonstration, Git Bash will be the terminal used. If you would like to download Git Bash, consult https://git-scm.com/downloads. After you have a terminal on your machine that you are comfortable using, you can follow this guide to clone a repository onto your local system. 
