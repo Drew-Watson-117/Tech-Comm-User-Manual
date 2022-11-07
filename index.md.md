@@ -28,11 +28,27 @@ After hitting the `Login` button it will take you to the following screen where 
 
 ![[login-page.png | 400]]
 
+\
+\
+\
+\
 To create an account the navigation you would go would either be the [[https://gitlab.com/users/sign_up |Register now]] hyperlink or signing in with the third party. After hitting the [[https://gitlab.com/users/sign_up |Register now]] hyperlink the following screen prompts to create an account as well as gives you another chance to sign in with a third party account. 
 
 
 ![[register-page.png | 400]]
 
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 There will be a verification for your account but once that is done you are logged in your homepage for [[https://gitlab.com |GitLab]] should change to a completely different page where you have access to all of GitLab's functionality. 
 
 ![[logged-in-homepage.png | 700]]
@@ -43,6 +59,8 @@ Just like any good collaboration space for developers, GitLab allows for you to 
 
 ![[profile-dropdown.png | 400]]
 
+\
+\
 There are four options on this dropdown: `Set status`, `Edit profile`, `Preferences`, and `Sign out`. The most obvious one would be `Sign out` where it would take you back to the original GitLab page prior to being signed in to your account. You can also set your status with the `Set status` button which allows for you to broadcast to your fellow collaborators how you are currently feeling and if you are currently busy.
 
 ![[set-status.png]]
@@ -51,6 +69,11 @@ The last two drop down options both take you to the User Settings in different t
 
 ![[user-profile.png]]
 
+\
+\
+\
+\
+\
 As expected the `Preferences` button takes you to the Preferences tab of the User Settings and the following is what you can do in each tab:
 - Profile: Houses your main profile settings
 - Account: Allows for you to change your username and manage other acconts with 2FA (Two-Factor-Authentication)
@@ -67,6 +90,25 @@ As expected the `Preferences` button takes you to the Preferences tab of the Use
 - Active Sessions: Shows GitLab session ran on which devices
 - Authentication Log: Security log of authentication events
 - Usage Quotas: GitLab usage charts 
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 
 ### SSH Keys
 All SSH Documentation comes directly from [here](https://docs.gitlab.com/ee/user/ssh.html#prerequisites)
@@ -188,7 +230,28 @@ To add a GPG key to your user settings:
 
 -------------------------------------------------------------------------------
 \
-	
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 ## Repositories 
 
 A **repository** is a directory or folder that is stored in your GitLab account. GitLab acts as a version control system for your repository, which means that GitLab allows changes to your repository to be easily moderated. In this **repository** section of the manual, you will learn how to create a remote repository in GitLab, clone that repository to your local machine, and push changes from your local repository to your remote GitLab repository.
@@ -201,6 +264,13 @@ GitLab provides a way to very easily create a repository on your account. To cre
 
 ![[Pasted image 20221027124044.png]]
 
+\
+\
+\
+\
+\
+\
+\
 If you do have projects, the dashboard looks like this:
 
 ![[Pasted image 20221027130632.png]]
@@ -223,7 +293,12 @@ If you do have projects, the dashboard looks like this:
 ![[Pasted image 20221027131102.png]]
 
 ![[Pasted image 20221027131234.png]]
-
+\
+\
+\
+\
+\
+\
 ### Cloning a Repository
 
 To be able to make edits to the code in your repository, you have to be able to **clone** your remote GitLab repository onto your local machine. Cloning a repository will allow you to have access to the code in your remote repository on your local machine. To clone a repository, you will need to have access to a terminal on your computer. For this demonstration, Git Bash will be the terminal used. If you would like to download Git Bash, consult https://git-scm.com/downloads. After you have a terminal on your machine that you are comfortable using, you can follow this guide to clone a repository onto your local system. 
